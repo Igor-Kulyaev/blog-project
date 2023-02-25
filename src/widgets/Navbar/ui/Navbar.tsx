@@ -1,8 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Modal } from 'shared/ui/Modal/Modal';
+import React, { useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import { useCallback, useState } from 'react';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -27,7 +27,8 @@ export const Navbar = ({ className }: NavbarProps) => {
         {t('Войти')}
       </Button>
       <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-        {t('message')}
+        {/* eslint-disable-next-line */}
+        {t('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.')}
       </Modal>
     </div>
   );

@@ -1,14 +1,12 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { fireEvent, screen } from '@testing-library/react';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
-import { withTranslation } from 'react-i18next';
 import {
   renderWithTranslation,
 } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation';
 import { componentRender } from 'shared/lib/tests/componentRender/componentRender';
 
 describe('Sidebar', () => {
-  test('Test render', () => {
+  test('with only first param', () => {
     componentRender(<Sidebar />);
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
   });

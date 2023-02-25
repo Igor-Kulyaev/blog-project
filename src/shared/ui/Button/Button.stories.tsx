@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import 'app/styles/index.scss';
+
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import { Button, ButtonSize, ButtonTheme } from './Button';
@@ -45,8 +45,8 @@ OutlineSizeL.args = {
   size: ButtonSize.L,
 };
 
-export const OutlineSizeXL = Template.bind({});
-OutlineSizeXL.args = {
+export const OutlineSizeXl = Template.bind({});
+OutlineSizeXl.args = {
   children: 'Text',
   theme: ButtonTheme.OUTLINE,
   size: ButtonSize.XL,
@@ -74,7 +74,7 @@ BackgroundInverted.args = {
 export const Square = Template.bind({});
 Square.args = {
   children: '>',
-  theme: ButtonTheme.BACKGROUND,
+  theme: ButtonTheme.BACKGROUND_INVERTED,
   square: true,
 };
 
@@ -86,8 +86,8 @@ SquareSizeL.args = {
   size: ButtonSize.L,
 };
 
-export const SquareSizeXL = Template.bind({});
-SquareSizeXL.args = {
+export const SquareSizeXl = Template.bind({});
+SquareSizeXl.args = {
   children: '>',
   theme: ButtonTheme.BACKGROUND_INVERTED,
   square: true,
