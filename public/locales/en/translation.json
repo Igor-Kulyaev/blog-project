@@ -12,5 +12,7 @@
   "Переключить": "Switch",
   "Короткий язык": "En",
   "Войти": "Enter",
-  "message": "message"
+  "message": "message",
+  "increment": "increment",
+  "decrement": "decrement"
 }
